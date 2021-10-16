@@ -1,3 +1,5 @@
+using AutoMapper;
+using BookFlights.Business.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,7 @@ namespace BookFlights.API_Integration
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
+        internal static MapperConfiguration MapperConfiguration { get; set; }
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -18,6 +21,9 @@ namespace BookFlights.API_Integration
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //AutoMapper
+            MapperConfiguration = MapperConfig.MapperConfiguration();
         }
     }
 }
