@@ -3,6 +3,7 @@ using BookFlights.Business.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,8 +49,8 @@ namespace BookFlights.Business.Repositories.Implementation
 
         public async Task<TEntity> Update(TEntity entity)
         {
-            bookFlightsContext.Entry(entity).State = EntityState.Modified;
-            //bookFlightsContext.Set<TEntity>().AddOrUpdate(entity);
+            //bookFlightsContext.Entry(entity).State = EntityState.Modified;
+            bookFlightsContext.Set<TEntity>().AddOrUpdate(entity);
             await bookFlightsContext.SaveChangesAsync();
             return entity;
         }

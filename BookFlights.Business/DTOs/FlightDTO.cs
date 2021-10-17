@@ -10,18 +10,12 @@ namespace BookFlights.Business.DTOs
 {
     public class FlightDTO
     {
-        public string DepatureStation { get; set; }
+        public int Id { get; set; }
+        public string DepartureStation { get; set; }
         public string ArrivalStation { get; set; }
-
-        //[Required(ErrorMessage = "El campo es requerido")]
         public DateTime DepartureDate { get; set; }
-        public Transport transport { get; set; }
+        public string FlightNumber { get; set; }
         public decimal Price { get; set; }
         public string Currency { get; set; }
-
-        public string FlightNumber
-        {
-            get { return string.Format("{0}", transport.FlightNumber); }
-        }
     }
 }

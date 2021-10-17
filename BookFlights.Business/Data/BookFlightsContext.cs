@@ -12,7 +12,7 @@ namespace BookFlights.Business.Data
     {
         private static BookFlightsContext bookFlightsContext = null;
         public BookFlightsContext() 
-            : base("BookFlightsContext")
+            : base("DefaultConnection")
         {
             
         }
@@ -22,11 +22,6 @@ namespace BookFlights.Business.Data
 
         public static BookFlightsContext Create()
         {
-            //if(bookFlightsContext == null)
-            //    bookFlightsContext = new BookFlightsContext();
-
-            //return bookFlightsContext;
-
             return new BookFlightsContext();
         }
     }

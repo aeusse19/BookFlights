@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Buscar vuelos disponibles";
+}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="~/Scripts/SearchFlight.js"></script>
+    <link href="~/Content/Flight.css" rel="stylesheet" />
+</head>
+<body>
+    <br />
+    <br />
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="label-origin">Origen</label>
+                <input type="text" class="form-control" id="txtOrigin">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="label-destino">Destino</label>
+                <input type="text" class="form-control" id="txtDestination">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="label-fechaVuelo">Fecha de vuelo</label>
+                <input type="date" class="form-control" id="txtFrom">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12" id="div_new">
+        <button id="new" class="col-md-2 btn btn-primary">Buscar Vuelos</button>
+    </div>
+        
+    <div class="col-md-12">
+        <br />
+        <br />
+        <table id="grid" class="table table-bordered table-hover"></table>
+    </div>
+
+</body>
+
+</html>

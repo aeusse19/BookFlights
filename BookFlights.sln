@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookFlights.API_Integration
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookFlights.Business", "BookFlights.Business\BookFlights.Business.csproj", "{0AA3C89C-5BB8-4177-BAC4-8F28E8DF7AC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookFlights.Web", "BookFlights.Web\BookFlights.Web.csproj", "{46912DCB-5673-4914-831E-F4F16DD0E136}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0AA3C89C-5BB8-4177-BAC4-8F28E8DF7AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA3C89C-5BB8-4177-BAC4-8F28E8DF7AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AA3C89C-5BB8-4177-BAC4-8F28E8DF7AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46912DCB-5673-4914-831E-F4F16DD0E136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46912DCB-5673-4914-831E-F4F16DD0E136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46912DCB-5673-4914-831E-F4F16DD0E136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46912DCB-5673-4914-831E-F4F16DD0E136}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
