@@ -32,6 +32,11 @@ namespace BookFlights.Business.Services.Implementation
             return await businessRepository.GetById(id);
         }
 
+        public async Task<TEntity> SearchFlight(string departureStation, string arrivalStation, DateTime departureDate)
+        {
+            return await businessRepository.SearchFlight(departureStation, arrivalStation, departureDate);
+        }
+
         public async Task<TEntity> Insert(TEntity entity)
         {
             return await businessRepository.Insert(entity);

@@ -1,37 +1,18 @@
 $(function()
 {
-    get();
     $("#new").click(function(){
         post();
     });    
 });
 
 function post(){
-    console.log($("#txtOrigin").val(),$("#txtDestination").val(), $("#txtFrom").val());
-    var data = {
-        "Origin":  $("#txtOrigin").val(), 
-        "Destination": $("#txtDestination").val(),
-        "From":$("#txtFrom").val()
-    };
+    var data = new Object();
+    data.Origin = $('#txtOrigin').val();
+    data.Destination = $('#txtDestination').val();
+    data.From = $('#txtFrom').val();
 
-    $.ajax({
-        url: 'http://testapi.vivaair.com/otatest/api/values',
-        type: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        success: function (data) {
-            alert(data);
-            alert('OK');
-            get();
-        },
-        error: function (request, msg, error) {
-            alert("Error!" + request + " " + msg + " " + error);
-        }
-    });
-};
+    console.log(data.Origin, data.Destination, data.From);
 
-function get() {
     $("#grid").empty();
     var $grid = $("#grid");
 
@@ -39,25 +20,26 @@ function get() {
     $tr.append("<td>Origen</td>");
     $tr.append("<td>Destino</td>");
     $tr.append("<td>Fecha vuelo</td>");
-
     $grid.append($tr);
 
     $.ajax({
-        url: 'https://localhost:44312/api/Flights',
-        type: 'GET',
+        url: 'https://testapi.vivaair.com/otatest/api/values',
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: "application/json", 
         success: function (data) {
-            console.log(data);
+            alert(data.Origin, data.Destination, data.From);
+            alert(data);
             $.each(data, function (idx, item) {
                 var $tr = $("<tr></tr>");
-                $tr.append("<td>"+item.DepartureStation+"</td>");
-                $tr.append("<td>"+item.ArrivalStation+"</td>");
-                $tr.append("<td>"+item.DepartureDate+"</td>");
-
+                $tr.append("<td>" + item.DepartureStation + "</td>");
+                $tr.append("<td>" + item.ArrivalStation + "</td>");
+                $tr.append("<td>" + item.DepartureDate + "</td>");
                 $grid.append($tr);
             })
         },
         error: function (request, msg, error) {
-            alert("Error!" + request + " " + msg + " " + error);
+            console.log("Error in method post!");
         }
     });
-}
+};

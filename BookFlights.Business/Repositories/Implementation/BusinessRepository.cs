@@ -34,10 +34,16 @@ namespace BookFlights.Business.Repositories.Implementation
         {
             return await bookFlightsContext.Set<TEntity>().ToListAsync();
         }
+           
 
         public async Task<TEntity> GetById(int id)
         {
             return await bookFlightsContext.Set<TEntity>().FindAsync(id);
+        }
+
+        public async Task<TEntity> SearchFlight(string departureStation, string arrivalStation, DateTime departureDate)
+        {
+            return await bookFlightsContext.Set<TEntity>().FindAsync(departureStation, arrivalStation, departureDate);
         }
 
         public async Task<TEntity> Insert(TEntity entity)

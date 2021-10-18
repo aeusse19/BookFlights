@@ -10,6 +10,7 @@ namespace BookFlights.Business.Repositories.Contracts
     {
         Task<IEnumerable<TEntity>> GetAll();
         Task<TEntity> GetById(int id);
+        Task<TEntity> SearchFlight(string departureStation, string arrivalStation, DateTime departureDate);
         Task<TEntity> Insert(TEntity entity);
         Task<TEntity> Update(TEntity entity);
         Task Delete(int id);

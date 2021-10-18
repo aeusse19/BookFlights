@@ -23,5 +23,19 @@ namespace BookFlights.Web
             //AutoMapper
             MapperConfiguration = MapperConfig.MapperConfiguration();
         }
+
+        protected void Application_BeginRequest()
+        {
+            if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+            {
+                //These headers are handling the "pre-flight" OPTIONS call sent by the browser
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "*");
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Credentials", "true");
+                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
+                HttpContext.Current.Response.AddHeader("Access-Control-Expose-Headers", "TestHeaderToExpose");
+                HttpContext.Current.Response.End();
+            }
+        }
     }
 }

@@ -7,8 +7,8 @@ E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\bin\Debug\EntityFramework.S
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\bin\Debug\AutoMapper.xml
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\bin\Debug\EntityFramework.xml
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\bin\Debug\EntityFramework.SqlServer.xml
-E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.csprojAssemblyReference.cache
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.csproj.CoreCompileInputs.cache
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.csproj.CopyComplete
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.dll
 E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.pdb
+E:\EMPRESA\Newshore\BookFlights\BookFlights.Business\obj\Debug\BookFlights.Business.csprojAssemblyReference.cache

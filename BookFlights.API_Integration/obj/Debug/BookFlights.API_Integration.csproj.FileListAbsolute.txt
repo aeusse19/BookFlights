@@ -115,3 +115,6 @@ E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\obj\Debug\BookFlight
 E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\obj\Debug\BookFlights.API_Integration.csproj.CopyComplete
 E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\obj\Debug\BookFlights.API_Integration.dll
 E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\obj\Debug\BookFlights.API_Integration.pdb
+E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\bin\System.Web.Cors.dll
+E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\bin\System.Web.Http.Cors.dll
+E:\EMPRESA\Newshore\BookFlights\BookFlights.API_Integration\bin\System.Web.Http.Cors.xml
