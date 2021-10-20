@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BookFlights.ConsumirAPI/1.0.0": {
+        "dependencies": {
+          "BookFlights.Business": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "BookFlights.ConsumirAPI.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "BookFlights.Business/1.0.0": {
+        "runtime": {
+          "BookFlights.Business.dll": {}
+        }
+      },
+      "AutoMapper/10.0.0.0": {
+        "runtime": {
+          "AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.1.0"
+          }
+        }
+      },
+      "EntityFramework/6.0.0.0": {
+        "runtime": {
+          "EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookFlights.ConsumirAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "BookFlights.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/10.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

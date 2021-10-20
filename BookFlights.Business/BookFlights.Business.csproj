@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BookFlightsContext.cs" />
+    <Compile Include="DTOs\FlightAPI_DTO.cs" />
     <Compile Include="DTOs\FlightDTO.cs" />
     <Compile Include="DTOs\MapperConfig.cs" />
     <Compile Include="Models\Flight.cs" />
